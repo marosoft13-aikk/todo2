@@ -1,0 +1,42 @@
+name: todo_flutter
+description: A powerful offline-first Flutter TODO app with Hive and local notifications.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  provider: ^6.0.5
+  uuid: ^3.0.6
+  intl: ^0.20.2
+  flutter_local_notifications: ^17.0.0
+  flutter_slidable: ^4.0.0
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner: ^2.4.6
+  json_serializable: ^6.7.1
+
+# Optional: resources and fonts. 
+# If you don't have the mentioned assets/fonts, either add them to the project
+# under the corresponding paths or remove/adjust the entries below.
+flutter:
+  generate: true # يمكّن gen_l10n (ARB -> generated localization) لو قررت تستخدمه مستقبلاً
+  uses-material-design: true
+
+ 
+
+# نصائح بعد التعديل:
+# 1) شغّل: `flutter pub get`
+# 2) إذا أضفت خطوطاً أو صوراً، تأكد من وجودها في المسارات أعلاه.
+# 3) لو تريد استخدام gen_l10n مع ملفات ARB ضع ملفات .arb داخل lib/l10n/ وبعدها سيولد Flutter ملفات التوطين.
